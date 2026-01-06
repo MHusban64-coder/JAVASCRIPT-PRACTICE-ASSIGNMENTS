@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASSIGNMENT 9 (JS)</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
-      <div class="container">
-        <h1>COUNTER</h1>
+    <div class="container">
+      <h1>COUNTER</h1>
       <div id="value">0</div>
       <div id="btn-cont">
         <button id="increase" onclick="countFunction('inc')">INCREMENT</button>
@@ -18,22 +24,46 @@
         <button id="reset" onclick="countFunction('res')">RESET</button>
       </div>
     </div>
-    <hr style="height: 10px; background-color: black; border: none;">
+    <!-- first completed -->
+    <!-- second start -->
+    <hr style="height: 10px; background-color: black; border: none" />
     <div class="container-inp">
       <form>
-      <label for="user-name">USER-NAME:</label>
-      <input type="text" placeholder="enter your name"><br>
-      <label for="email">EMAIL:</label>
-      <input type="email" placeholder="enter your email"><br>
-      <label for="password">PASSWORD:</label>
-      <input type="password" placeholder="enter password" id="pass"><br>
-      <input type="checkbox" name="check" id="checkpass" onclick="checkPassword()" style="display: inline-block; padding: 10px;"><p style="display: inline-block;">show password</p><br>
-      <input type="submit" value="submit" class="btn btn-outline-dark">
-      <!-- <span><i class="fa-solid fa-eye"></i></span> -->
+        <label for="user-name">USER-NAME:</label>
+        <input type="text" placeholder="enter your name" /><br />
+        <label for="email">EMAIL:</label>
+        <input type="email" placeholder="enter your email" /><br />
+        <label for="password">PASSWORD:</label>
+        <input type="password" placeholder="enter password" id="pass" /><br />
+        <input
+          type="checkbox"
+          name="check"
+          id="checkpass"
+          onclick="checkPassword()"
+          style="display: inline-block; padding: 10px"
+        />
+        <p style="display: inline-block">show password</p>
+        <br />
+        <input type="submit" value="submit" class="btn btn-outline-dark" />
+        <!-- <span><i class="fa-solid fa-eye"></i></span> -->
       </form>
-
-
     </div>
+    <!-- second also completed -->
+    <!-- third started -->
+
+    <hr style="height: 10px; background-color: black; border: none" />
+
+    <div class="container-num">
+      <h1>PRIME NUMBER FINDER</h1>
+      <form action="">
+        <input type="number" placeholder="Enter your number" id="num" /><br />
+        <button class="btn btn-outline-dark" onclick="checkNum(event)" type="button">
+          Check Number
+        </button>
+      </form>
+      <p id="para">Enter your number</p>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

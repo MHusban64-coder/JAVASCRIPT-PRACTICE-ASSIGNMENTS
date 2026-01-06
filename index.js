@@ -34,3 +34,29 @@ function checkPassword(){
 
 }
 // second also completed
+function checkNum(){
+var number = parseInt(document.getElementById("num").value)
+var message = document.getElementById("para").innerHTML
+// console.log("num=>",number)
+if (number<2) {
+    alert("please enter a valid number")
+    return
+}
+if (number == 2) {
+        document.getElementById("para").innerHTML = "It is a prime number";
+        return
+    }
+for (let i = 2; i < number; i++) {
+    if (number%i==0) {
+document.getElementById("para").innerHTML = "It is not a prime number"
+        break
+    }
+}
+
+document.getElementById("para").innerHTML = "It is a prime number"
+
+
+
+// message.innerText=message
+
+}
